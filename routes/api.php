@@ -26,3 +26,16 @@ Route::get('/kit_por_programa/{prg}','App\Http\Controllers\Ctrl_kit@kit_por_prog
 Route::get('/kit_por_programa_cadena/{prg}/{cad}','App\Http\Controllers\Ctrl_kit@kit_por_programa_cadena');
 Route::get('/prog_metas/{prg}','App\Http\Controllers\Ctrl_kit@prog_metas');
 Route::get('/kit_por_programa_meta/{prg}/{met}','App\Http\Controllers\Ctrl_kit@kit_por_programa_meta');
+Route::get('/kit_por_programa_meta_cadena/{prg}/{met}/{cadena}','App\Http\Controllers\Ctrl_kit@kit_por_programa_meta_cadena');
+Route::get('/metas','App\Http\Controllers\Ctrl_kit@metas');
+Route::get('/tareas/{met}','App\Http\Controllers\Ctrl_kit@tareas');
+Route::get('/kit_por_meta/{met}','App\Http\Controllers\Ctrl_kit@kit_por_meta');
+Route::get('/kit_por_meta_cadena/{met}/{cad}','App\Http\Controllers\Ctrl_kit@kit_por_meta_cadena');
+Route::get('/kit_por_meta_tarea/{met}/{tar}','App\Http\Controllers\Ctrl_kit@kit_por_meta_tarea');
+Route::get('/kit_por_meta_tarea_cadena/{met}/{tar}/{cad}','App\Http\Controllers\Ctrl_kit@kit_por_meta_tarea_cadena');
+Route::get('/clasificador','App\Http\Controllers\Ctrl_kit@clasificador');
+Route::get('/kit_por_clasificador/{clf}','App\Http\Controllers\Ctrl_kit@kit_por_clasificador');
+Route::get('/kit_por_clasificador_cadena/{clf}/{cad}','App\Http\Controllers\Ctrl_kit@kit_por_clasificador_cadena');
+Route::get('/metas_clasificador/{met}','App\Http\Controllers\Ctrl_kit@metas_clasificador');
+Route::get('/kit_por_meta_clasificador/{met}/{clf}','App\Http\Controllers\Ctrl_kit@kit_por_meta_clasificador');
+Route::get('/kit_por_meta_clasificador_cadena/{met}/{clf}/{cad}','App\Http\Controllers\Ctrl_kit@kit_por_meta_clasificador_cadena');
